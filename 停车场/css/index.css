@@ -1,0 +1,593 @@
+@font-face {
+    font-family: money;
+    src: url(../font/QuartzRegular\(1\).ttf)
+}
+
+body {
+    margin: 0;
+    padding: 0 0.4rem;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 0.4rem;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 头部开始 */
+
+header {
+    height: 0.9rem;
+    /* background-color: aqua; */
+    line-height: 0.9rem;
+    color: #fff;
+    border-bottom: 1px solid #396e95;
+}
+
+.logo {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo>img {
+    height: 0.4rem;
+    margin: 0.25rem 0;
+}
+
+header>span {
+    font-size: 0.36rem;
+}
+
+.header-right {
+    float: right;
+    height: 0.5rem;
+    margin: 0.2rem 0;
+    text-align: center;
+}
+
+.header-right>.time {
+    height: 0.25rem;
+    line-height: 0.25rem;
+    font-size: 0.2rem;
+}
+
+.header-right>.date {
+    height: 0.25rem;
+    line-height: 0.25rem;
+    font-size: 0.2rem;
+}
+
+
+/* 头部结束 */
+
+
+/* content开始 */
+
+.all {
+    width: 100%;
+    overflow: hidden;
+    margin: 0.44rem 0;
+    height: 10rem;
+}
+
+
+/* 左边部分开始 */
+
+.car-left {
+    float: left;
+    width: 25%;
+    /* background-color: aquamarine; */
+}
+
+
+/* 今日收入开始 */
+
+.car-left-top {
+    width: 100%;
+    height: 1.8rem;
+    background-image: url(../img/l-t-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.car-left-top .title {
+    font-size: .18rem;
+    color: #c5e7ff;
+    line-height: .2rem
+}
+
+.money {
+    height: 1.6rem;
+}
+
+.money-left {
+    height: 100%;
+    width: 65%;
+    font-family: money;
+    color: #fff55a;
+    text-align: center;
+    font-size: .66rem;
+    line-height: 1.6rem;
+    float: left;
+}
+
+.money-right {
+    width: 35%;
+    float: right;
+    padding: 0.2rem 0;
+}
+
+.money-right-top {
+    color: #c5e7ff;
+}
+
+.money-right>img {
+    height: 0.32rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.money-right-bottom {
+    color: #ff5e5e;
+}
+
+.span {
+    height: 0.4rem;
+    font-size: 0.2rem;
+    display: block;
+    text-align: center;
+    line-height: 0.4rem
+}
+
+
+/* 今日收入结束 */
+
+
+/* 停车时长开始 */
+
+.car-left-content {
+    margin: 0.2rem 0;
+    width: 100%;
+    height: 3.4rem;
+    background-image: url(../img/l-c.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.car-left-content>h2 {
+    color: #c5e7ff;
+    font-size: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
+
+.car-left-content-img {
+    width: 100%;
+    height: 2.5rem;
+    padding-right: 0.2rem;
+    z-index: 999;
+    /* background-color: #ff5e5e;
+    opacity: 0.5; */
+}
+
+
+/* 停车时长结束 */
+
+
+/* 设置警告开始 */
+
+.car-left-bottom {
+    position: relative;
+    width: 100%;
+    height: 3.8rem;
+    background-image: url(../img/l-r-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.car-left-bottom>h2 {
+    color: #c5e7ff;
+    font-size: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
+
+.per-list-big-box {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+}
+
+.per-list {
+    /* width: 100%; */
+    margin: 0 0.32rem;
+    height: 3rem;
+    overflow: hidden;
+}
+
+.per-list-box {
+    position: absolute;
+    top: 0;
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.per-item {
+    color: #c5e7ff;
+    font-size: 0.12rem;
+    margin: 0.1rem 0;
+}
+
+.per-item-top {
+    height: 0.28rem;
+    line-height: 0.28rem;
+    /* background-color: yellow; */
+}
+
+.error>.per-item-top>.item-top-ren {
+    height: 0.24rem;
+    border-radius: 0.24rem;
+    font-size: 0.14rem;
+    line-height: 0.24rem;
+    float: left;
+    border: 1px solid #ff5e5e;
+}
+
+.error>.per-item-top>.item-top-ren span:nth-child(1) {
+    color: black;
+    background-color: #ff5e5e;
+    float: left;
+    height: 100%;
+    border-radius: 0.24rem;
+    padding: 0 0.1rem;
+}
+
+.success>.per-item-top>.item-top-ren {
+    height: 0.24rem;
+    border-radius: 0.24rem;
+    font-size: 0.14rem;
+    line-height: 0.24rem;
+    float: left;
+    border: 1px solid #26f5d5;
+}
+
+.success>.per-item-top>.item-top-ren span:nth-child(1) {
+    color: black;
+    background-color: #26f5d5;
+    float: left;
+    height: 100%;
+    border-radius: 0.24rem;
+    padding: 0 0.1rem;
+}
+
+.item-top-ren span:nth-child(2) {
+    float: left;
+    height: 100%;
+    font-size: 0.14rem;
+    border-radius: 0.24rem;
+    padding: 0 0.1rem;
+}
+
+.item-top-time {
+    float: right;
+    line-height: 0.24rem;
+    height: 0.24rem;
+    color: #c5e7ff;
+    font-size: 0.12rem;
+}
+
+.per-item-bottom {
+    font-size: 0.12rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
+}
+
+.span-left {
+    float: left;
+}
+
+.span-right {
+    float: right;
+}
+
+
+/* 设置警告结束 */
+
+
+/* 左边部分结束 */
+
+
+/* -------------------------------------------------- */
+
+
+/* 中间部分开始 */
+
+.car-content {
+    width: 50%;
+    float: left;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    height: 9.4rem;
+    /* background-color: #fff; */
+}
+
+.car-content-top {
+    height: 6.4rem;
+    /* background-color: pink; */
+}
+
+.car-content-bottom {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    background-image: url(../img/r-b-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.content-bottom-ul {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.content-bottom-li {
+    width: 2rem;
+    float: left;
+    height: 100%;
+    margin-right: 0.1rem;
+    font-size: 0.14rem;
+    text-align: center;
+    color: #c5e7ff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.li-time {
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+
+.li-img {
+    width: 100%;
+    height: 2rem;
+    background-image: url(../img/car1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.li-car-name {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.1rem;
+}
+
+.li-car-number {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.1rem;
+}
+
+
+/* 提示框开始 */
+
+.map-name {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(74, 223, 255);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 21px;
+    padding: 20px;
+}
+
+.map-name>h2 {
+    color: rgb(74, 223, 255);
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.5em;
+}
+
+.map-name>p {
+    line-height: 30px;
+}
+
+.map-name>.map-money {
+    color: #26f5d5;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+
+.map-car {
+    width: 80%;
+    height: 40px;
+    background-color: #18233b;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+
+.map-car-left {
+    float: left;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(74, 223, 255, 0.5);
+}
+
+.map-car-right {
+    text-align: center;
+    float: left;
+    width: 50%;
+    line-height: 20px;
+}
+
+.map-car-bottom {
+    clear: both;
+    width: 100%;
+    height: 0.3rem;
+    font-size: 0.12rem;
+}
+
+.map-car-bottom>span {
+    margin-right: 0.06rem;
+}
+
+
+/* 提示框结束 */
+
+
+/* 中间部分结束 */
+
+
+/* 右边部分开始 */
+
+.car-right {
+    width: 25%;
+    float: left;
+}
+
+.car-right-top {
+    width: 100%;
+    height: 1.8rem;
+}
+
+.cat-stop {
+    width: 33.33333%;
+    height: 100%;
+    float: left;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+.car-stop-er {
+    height: 100%;
+    background-color: #ff5e5e;
+    background: url(../img/33.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+}
+
+.car-stop-er div:nth-child(1) {
+    margin-top: .5rem;
+    color: #58e9ff;
+    font-size: .28rem;
+    height: .4rem;
+}
+
+.car-stop-er div:nth-child(2) {
+    color: #c5e7ff;
+    font-size: .16rem;
+    height: .4rem;
+}
+
+.car-right-content {
+    margin: 0.2rem 0;
+    height: 3.4rem;
+    background: url(../img/r2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.car-right-content>h2 {
+    color: #c5e7ff;
+    font-size: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
+
+.right-content-m {
+    height: 2.8rem;
+    padding: 0 0.2rem 0.2rem;
+    box-sizing: border-box;
+}
+
+.right-content-l {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.right-content-r {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.car-right-bottom {
+    height: 3.8rem;
+    background: url(../img/l-c.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.car-right-bottom>h2 {
+    color: #c5e7ff;
+    font-size: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
+
+.right-bottom-inner {
+    position: relative;
+    height: 3rem;
+    margin: 0 0.32rem;
+    overflow: hidden;
+    font-size: 0.12rem;
+    color: #fff;
+}
+
+.bottom-inner-list {
+    position: absolute;
+    width: 100%;
+}
+
+.inner-list-ul {
+    list-style: none;
+}
+
+.inner-list-li {
+    padding: 0.2rem 0;
+    border-top: 1px dashed #fff;
+}
+
+.li-l-r {
+    overflow: hidden;
+}
+
+.li-l-r>.left {
+    float: left;
+}
+
+.li-l-r>.right {
+    float: right;
+}
+
+
+/* 右边部分结束 */
+
+
+/* content结束 */
